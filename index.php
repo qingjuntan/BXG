@@ -29,8 +29,16 @@
 
     }
 
+
+
+
     
 
     // //include 可以将指定路径的文件内容直接包含到当前文件当中！
-    include "./views/".$directory."/".$fileName.".html"
+    include "./views/".$directory."/".$fileName.".html";
+
+
+
+
 ?>
+

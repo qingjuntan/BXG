@@ -8,6 +8,7 @@ define(["jquery","template","cookie"],function($,template){
         location.href = "/dashboard/login";
         return false;
       }
+      console.log(1);
       var userInfo = JSON.parse($.cookie("userInfo"));
       var html = template("tpl1", userInfo);
       $("#profile").html(html);
