@@ -1,11 +1,10 @@
 <div class="aside">
   <!-- 个人资料 -->
-  <div class="profile">
+  <div class="profile" id="profile">
     <!-- 头像 -->
-    <div class="avatar img-circle">
-      <img src="/views/static/uploads/avatar.jpg">
-    </div>
-    <h4>布头儿</h4>
+
+    <!--头像和姓名的模板-->
+
   </div>
   <!-- 导航菜单 -->
   <div class="navs">
@@ -85,3 +84,10 @@
     </ul>
   </div>
 </div>
+
+<script type="text/template" id="tpl1">
+  <div class="avatar img-circle">
+    <img src="{{tc_avatar}}">
+  </div>
+  <h4>{{tc_name}}</h4>
+</script>
