@@ -36,29 +36,7 @@
 <!--引用js文件-->
 <?php include "/views/public/js.html" ?>
 <script>
-  $(function () {
-    //获取表单提交事件
-    $("form").submit(function () {
-      //var name = $("[name=tc_name]").val();
-      //var pass = $("[name=tc_pass]").val();
-      $.ajax({
-        url: "/api/login",
-        type: "post",
-//        data: {
-//          tc_name: name,
-//          tc_pass: pass,
-//        },
-        data:$(this).serialize(),
-        success: function (data) {
-          if (data.code == 200) {
-            $.cookie("userInfo",JSON.stringify(data.result),{path:"/"});
-            location.href = "/";
-          }
-        }
-      })
-      return false;
-    })
-  })
+  require(["../static/js/dashboard/login"]);
 </script>
 </body>
 </html>
